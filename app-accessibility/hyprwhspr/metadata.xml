@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>maintainer-needed@gentoo.org</email>
+		<name>Maintainer Needed</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">goodroot/hyprwhspr</remote-id>
+	</upstream>
+	<use>
+		<flag name="visualizer">Install GTK/PyGObject dependencies for the microphone OSD visualizer</flag>
+	</use>
+</pkgmetadata>
