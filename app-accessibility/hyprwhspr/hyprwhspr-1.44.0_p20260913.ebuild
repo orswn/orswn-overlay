@@ -7,11 +7,11 @@ PYTHON_COMPAT=( python3_{11..14} )
 
 inherit python-single-r1 systemd
 
-COMMIT="33c794d78d88a4e7ab8e08f7ba2d36e7c7953bb8"
+COMMIT="gemini-transcribe"
 
 DESCRIPTION="Native speech-to-text dictation for Linux desktops"
 HOMEPAGE="https://github.com/orswn/hyprwhspr https://github.com/goodroot/hyprwhspr https://hyprwhspr.com"
-SRC_URI="https://github.com/orswn/${PN}/archive/${COMMIT}.tar.gz -> ${P}-${COMMIT:0:7}.tar.gz"
+SRC_URI="https://github.com/orswn/${PN}/archive/refs/heads/${COMMIT}.tar.gz -> ${P}-${COMMIT}.tar.gz"
 S="${WORKDIR}/${PN}-${COMMIT}"
 
 LICENSE="MIT"
