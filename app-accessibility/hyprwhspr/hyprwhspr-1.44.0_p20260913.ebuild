@@ -7,11 +7,12 @@ PYTHON_COMPAT=( python3_{11..14} )
 
 inherit python-single-r1 systemd
 
-COMMIT="gemini-transcribe"
+# orswn/hyprwhspr branch gemini-transcribe. Pin the commit so the distfile checksum stays valid.
+COMMIT="0b4b9572bba729c2e273272024e85afb1cbd4d65"
 
 DESCRIPTION="Native speech-to-text dictation for Linux desktops"
 HOMEPAGE="https://github.com/orswn/hyprwhspr https://github.com/goodroot/hyprwhspr https://hyprwhspr.com"
-SRC_URI="https://github.com/orswn/${PN}/archive/refs/heads/${COMMIT}.tar.gz -> ${P}-${COMMIT}.tar.gz"
+SRC_URI="https://github.com/orswn/${PN}/archive/${COMMIT}.tar.gz -> ${P}-${COMMIT:0:12}.tar.gz"
 S="${WORKDIR}/${PN}-${COMMIT}"
 
 LICENSE="MIT"
