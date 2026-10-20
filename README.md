@@ -5,7 +5,7 @@ Personal Gentoo overlay for ebuilds that are not in the main Gentoo tree or need
 ## Add with eselect-repository
 
 ```bash
-sudo eselect repository add orswn-overlay git file:///home/jsb/Projects/orswn-overlay
+sudo eselect repository add orswn-overlay git https://github.com/orswn/orswn-overlay.git
 sudo emerge --sync orswn-overlay
 ```
 
@@ -24,3 +24,7 @@ With the GTK microphone OSD visualizer dependencies:
 ```bash
 sudo emerge app-accessibility/hyprwhspr[visualizer]
 ```
+
+## License
+
+Ebuilds and metadata are distributed under the GNU General Public License v2. See `LICENSE`.
